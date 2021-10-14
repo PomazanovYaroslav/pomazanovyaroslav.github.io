@@ -1,11 +1,11 @@
 "use strict"
-const userName = "Yaroslav";
-const age = 23;
-const role = "admin";
-const occupation = "CEO";
+let userName;
+let age;
+let role;
+let occupation;
 
-alert(userName && age > 18);
-alert(!role || !occupation);
-alert(occupation ?? role);
-alert(userName && age > 18 || role);
-alert(age || !role && userName);
+(age > 18) && !!userName;
+occupation === "CEO" && role ==="Admin";
+occupation ?? role;
+((age > 18) && !!userName) || role === "Admin";
+role != 'Admin' && !!userName && age;
