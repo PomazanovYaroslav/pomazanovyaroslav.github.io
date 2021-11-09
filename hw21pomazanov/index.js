@@ -12,7 +12,7 @@ function clone(o) {
     if (set && typeof cache == "function") {
         return cache();
     }
-
+    
     o[gdcc] = function() {
         return result; 
     };
@@ -37,8 +37,3 @@ function clone(o) {
     }
     return result;
 }
-
-let b = clone(a);
-
-b.x = 'b';
-b.nested.y = 'b';
